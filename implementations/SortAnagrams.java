@@ -1,3 +1,14 @@
+/*
+*	How it works :
+*		An anagram is a type of word play, the result of rearranging the letters of a word or 
+*		phrase to produce a new word or phrase, using all the original letters exactly once
+*														https://en.wikipedia.org/wiki/Anagram	
+*		
+*		My implementation is based on the rule that if we replace every character by it's ascii code and add them 
+*		we will get the same  result because addition is commutative
+*		
+*			
+*/
 public class SortAnagrams {
 
 	public static void main(String args[]) {
