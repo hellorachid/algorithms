@@ -1,3 +1,29 @@
+/*
+*
+*	how it works :
+*
+*		we iterate through the array from 0 to given number, 
+*		for every number :
+*			we devide by 10 and check if the rest equal to the digit, repeating the task if the number is greater than 0
+*
+*
+*	Example :
+*		array : 0 , 1 , 2  
+*		digit : 1
+*		
+*	Step 0 :
+*		0 / 10 = 0
+*		0 % 10 = 0 => 0 != 1 we do nothing
+*	Step 1 :
+*		1 / 10 = 0
+*		1 % 10 = 1 => 1 == 1 we add one to variable count
+*	Step 0 :
+*		2 / 10 = 0
+*		2 % 10 = 2 => 2 != 1 we do nothing
+*	
+*	Result : number of 1 in 0..2 is 1
+*
+*/
 public class CountDigitInRange {
 
 	public static void main(String args[]) {
