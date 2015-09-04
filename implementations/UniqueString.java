@@ -1,3 +1,11 @@
+/*
+*	How it works :
+*		
+*		we try to add the character in the HashSet if it return false, 
+*		that means  the character is exist and it's a duplicate so we return false
+*		At the end we return true (all characters are unique)
+*
+*/
 import java.util.*;
 public class UniqueString {
 	
@@ -19,11 +27,9 @@ public class UniqueString {
 	public static boolean isUnique(String line) {
 		HashSet<Character> chars = new HashSet<Character>();
 		for(int i = 0; i < line.length(); i++) {
-			if(chars.contains(line.charAt(i))) {
+			if(!chars.add(line.charAt(i))) {
 				return false;
-			}else {
-				chars.add(line.charAt(i));
-			}
+			}		
 		}
 		return true;
 	}
