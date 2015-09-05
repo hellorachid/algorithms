@@ -1,4 +1,8 @@
 
+/*
+*	How it works :
+*		https://en.wikipedia.org/wiki/Queue_(abstract_data_type)
+*/
 public class Queue {
 	private Node front;
 	private Node rear;
