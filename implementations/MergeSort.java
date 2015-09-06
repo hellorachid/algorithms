@@ -1,3 +1,10 @@
+/*
+*
+*	How it works :
+*		https://en.wikipedia.org/wiki/Merge_sort
+*
+*/
+
 public class MergeSort {
 
 	public static void main(String args[]) {
