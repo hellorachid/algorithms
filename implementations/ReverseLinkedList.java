@@ -1,3 +1,20 @@
+/*
+*	How it works
+*		-----------------------------
+*	    | 1 | 2 | 3 | 4 | 5 | 6 | 8 |
+*		-----------------------------
+*		 /\   /\  /\
+*       prev next		  
+*		
+*		to reverse a LinkedList we must have 2 pointers, one the previous node and one on the next none
+*       we keep the next node reference (we will override it)
+*		we update the next ndoe to the previous 
+*		we update previous to the current node
+*		we update current node to the next node
+*		
+*/
+
+
 public class ReverseLinkedList {
 	
 	private Node head;
