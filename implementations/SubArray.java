@@ -10,36 +10,27 @@ public class SubArray {
 		int sum1 = 5; 
 		int sum2 = 0; 
 		int sum3 = 0; 
-		int sum4 = 0; 
+		int sum4 = 0;
+
 		Range range1 = findSum(array1, sum1);
 		Range range2 = findSum(array2, sum2);
 		Range range3 = findSum(array3, sum3);
 		Range range4 = findSum(array4, sum4);
 
-		if (range1 != null) {
-			System.out.printf("sum of %d is from index %d to %d \n", sum1, range1.start, range1.end);
-		} else {
-			System.out.printf("%d has no sum in the array \n", sum1);
-		}
+		print(range1, sum1);
+		print(range2, sum2);
+		print(range3, sum3);
+		print(range4, sum4);
+		
 
-		if (range2 != null) {
-			System.out.printf("sum of %d is from index %d to %d \n", sum2, range2.start, range2.end);
-		} else {
-			System.out.printf("%d has no sum in the array \n", sum2);
-		}
+	}
 
-		if (range3 != null) {
-			System.out.printf("sum of %d is from index %d to %d \n", sum3, range3.start, range3.end);
+	public static void print(Range range, int sum) {
+		if (range != null) {
+			System.out.printf("sum of %d is from index %d to %d \n", sum, range.start, range.end);
 		} else {
-			System.out.printf("%d has no sum in the array \n", sum3);
+			System.out.printf("%d has no sum in the array \n", sum);
 		}
-
-		if (range4 != null) {
-			System.out.printf("sum of %d is from index %d to %d \n", sum4, range4.start, range4.end);
-		} else {
-			System.out.printf("%d has no sum in the array \n", sum4);
-		}
-
 	}
 
 	public static Range findSum(int[] array, int sum) {
