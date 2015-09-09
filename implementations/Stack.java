@@ -1,3 +1,8 @@
+/*
+*	How it works :
+*		https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
+*
+*/
 public class Stack {
 
 	private Node head ;
