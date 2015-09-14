@@ -1,3 +1,14 @@
+/*
+*	Problem :
+*		We have two sorted lists, one of them have enough space at th end to fill the second one
+*		we want to sort them in the first array
+*	example :
+*		a = {1, 3, 4, 10, 20, 0, 0, 0};
+*		b = {2, 6, 7};
+*		result : a = {1, 2, 3, 4, 6, 7, 10, 20}
+*		
+*		
+*/
 public class MergeTwoSortedLists {
 
 	public static void main(String args[]) {
