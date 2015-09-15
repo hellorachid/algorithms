@@ -1,3 +1,8 @@
+/*
+*	source :  ￼CRACKING THE CODING INTERVIEW, FIFTH EDITION, page 324
+*		
+*/
+
 import java.util.*;
 
 public class StringPermutations {
@@ -18,6 +23,7 @@ public class StringPermutations {
 		for (String word : words) {
 			for (int j = 0; j <= word.length(); j++) {
 				String s = insertCharAt(word, first, j);
+				System.out.println(s);
 				permutations.add(s);
 			}
 		}
@@ -31,7 +37,7 @@ public class StringPermutations {
 	}
 	
 	public static void main(String[] args) {
-		ArrayList<String> list = getPerms("abcde");
+		ArrayList<String> list = getPerms("abc");
 		System.out.println("There are " + list.size() + " permutations.");
 		for (String s : list) {
 			System.out.println(s);
