@@ -3,3 +3,6 @@
 	Quick Sort
 	Binary Search
 # Data structures
+	Stack
+	Queue
+	LinkedList
