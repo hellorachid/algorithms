@@ -4,7 +4,7 @@
 * Binary Search
 
 # Data structures
-	Stack
-	Queue
-	LinkedList
+* Stack
+* Queue
+* LinkedList
 	
